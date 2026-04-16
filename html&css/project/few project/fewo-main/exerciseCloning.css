@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: blue;
+}
+.head{
+                display: flex ;
+                padding-bottom: 15px;
+                justify-content: space-between;
+            }
+h1{
+    margin-left: 10px;
+    margin-top: 0;
+}
+#side{
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    padding: 15px;
+}
+#menu{
+                /* border: 1px solid rgb(177, 18, 18); */
+                width: 100%;
+                background-image: url(image.jpeg);
+                background-size: cover;
+            
+            }
+
+            #start{
+                color: white;
+            }
+            #reservation{
+                background-color: white;
+                border: 1px solid;
+                border-radius: 25px;
+                height: 70px;
+                margin: 50px;
+                display: flex;
+                padding: 25px;
+                margin-top: 150px;
+                flex-direction:row;
+                justify-content: center;
+                align-items:normal;
+            }
+            #destination{
+                border: 1px solid;
+                border-radius: 20px;
+                padding: 25px;
+                align-items: start;
+                margin-right: 120px;
+                
+            }
+           
+            #date{
+                border: 1px solid;
+                border-radius: 20px;
+                align-items:center;
+                width: 310px;
+                text-align: left;
+                padding: 10px;
+                
+            }
+            #guest{
+                border: 1px solid;
+                border-radius: 20px;
+                padding: 10px;
+                align-items:end;
+                margin-left: 100px;
+                text-align: left;
+            }
+            #search{
+                border: 1px solid;
+                border-radius: 15px;
+                width: 150px;
+            
+            }
+            input[type="submit"]{
+                background-color: rgb(16, 16, 73);;
+                color: white;
+                border-radius: 20px;
+                padding: 10px;
+                margin-left: 20px;
+            }
+#contain{
+    border-radius: 20px;
+    display: flex;
+    background-color: rgb(16, 16, 73);
+    color: white;
+    height: 70px;
+    padding: 10px;
+    margin: 50px ;
+}
