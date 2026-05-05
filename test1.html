@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-100 ">
-    <header class="bg-white shadow ">
+    <header class="bg-white shadow position-sticky top-0 left-0 z-10">
         <div class="container mx-auto px-4 py-6">
             <h1 class="text-2xl font-bold">My App</h1>
             <div>
@@ -25,7 +25,10 @@
  <!-- grid grid-cols-1 md:grid-cols-2 gap-4 -->
     <main class="container mx-auto px-4 py-6 flex gap-4 bg-gray-100">
         <aside class="bg-gray-200 p-5 text-center w-40 text-lg font-semibold mb-2">
-            <p><a href="" class="text-gray-600 hover:text-gray-800">football</a></p>
+            <p><a href="" class="text-gray-600 hover:text-gray-800"><select name="football" class=" rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="football">teams</option>
+                <option value="rugby">tournaments</option>
+            </select></a></p>
             <p><a href="" class="text-gray-600 hover:text-gray-800">rugby</a></p>
             <p><a href="" class="text-gray-600 hover:text-gray-800">basketball</a></p>
             <p><a href="" class="text-gray-600 hover:text-gray-800">tennis</a></p>
@@ -57,58 +60,28 @@
         </div>
             <!-- <div class="text-center rounded bg-green-400 w-70 h-70 content-center item-center">play</div> -->
             <!-- <div class="w-70 h-70 bg-blue-500 p-5 text-center">Hello, Tailwind CSS!</div> -->
-            <button class="w-70 h-20 mt-25 bg-blue-500 p-5 m-5 rounded-lg text-lg text-white  hover:bg-bl`ue-600">subscribe</button>
+            <button class="w-70 h-20 bg-blue-500 p-5 m-5 rounded-lg text-lg text-white  hover:bg-bl`ue-600">subscribe</button>
             <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             
             <div>
                 <h1 class="text-center text-2xl font-bold">football</h1>
                 <p>Welcome to the football section!</p>
-                <table class="w-full border border-gray-400 text-center">
+                <table class="w-full border border-gray-400 text-center bg-green-200">
                     <thead>
                         <tr>
-                            <th>pos</th>
-                            <th>team</th>
-                            <th>points</th>
-                            <th>Wins</th>
-                            <th>Losses</th>
-                            <th>Draws</th>
-                            <th>goals</th>
-                            <th>goals conceded</th>
+                            <th>pos</th><th>team</th><th>points</th><th>Wins</th><th>Losses</th><th>Draws</th><th>goals</th><th>goals conceded</th>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>barcelona</td>
-                            <td>10</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td>5</td>
-                            <td>2</td>
+                        <tr><td>1</td><td>barcelona</td><td>10</td><td>3</td><td>1</td><td>0</td><td>5</td><td>2</td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>manchester city</td>
-                            <td>10</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td>5</td>
-                            <td>2</td>
+                        <tr><td>2</td><td>manchester city</td><td>10</td><td>3</td><td>1</td><td>0</td><td>5</td><td>2</td>
                         </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>real madrid</td>
-                            <td>10</td>
-                            <td>3</td>
-                            <td>1</td>
-                            <td>0</td>
-                            <td>5</td>
-                            <td>2</td>
+                        <tr><td>3</td><td>real madrid</td><td>10</td><td>3</td><td>1</td><td>0</td><td>5</td><td>2</td>
                         </tr>
                     </thead>
                     
                 </table>
             </div>
+
             <div class="overflow-x-auto shadow-md sm:rounded-lg pt-12">
                 <table class="w-full text-sm text-left text-gray-500">
                     <thead class="text-xs text-gray-700 uppercase bg-gray-50">
@@ -139,12 +112,31 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="grid grid-cols-12 gap-2 h-96 mt-4">
+                <!-- Sidebar: takes up 3 out of 12 columns -->
+                <aside class="col-span-3 bg-gray-800 text-white p-6">
+                    Navigation
+                </aside>
+
+                <!-- Main Content: takes up 9 out of 12 columns -->
+                <main class="col-span-9 bg-gray-100 p-6">
+                    <div class="grid grid-cols-2 gap-4">
+                    <section class="bg-white p-4 shadow">Left Content Card</section>
+                    <section class="bg-white p-4 shadow">Right Content Card</section>
+                    </div>
+                </main>
+                </div>
             
         </div>
     </main>
 
-    <footer>
-        
+    <footer class="p-2 py-0 bg-gray-800 text-white">
+        <div class=" flex flex-wrap gap-4 text-center">
+            <div class="bg-blue-500 p-4 w-70">Part 1</div>
+            <div class="bg-green-500 p-4 w-70">Part 2</div>
+            <div class="bg-red-500 p-4 w-70">Part 3</div>
+        </div>
     </footer>
 </body>
 </html>
