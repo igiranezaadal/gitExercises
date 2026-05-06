@@ -67,7 +67,7 @@
             <!-- <div class="text-center rounded bg-green-400 w-70 h-70 content-center item-center">play</div> -->
             <!-- <div class="w-70 h-70 bg-blue-500 p-5 text-center">Hello, Tailwind CSS!</div> -->
             
-            <div class="w-20 h-20 bg-blue-500 rounded-4xl flex items-center justify-center animate-spin "></div>
+            <div class="w-20 h-20 bg-blue-500 rounded-4xl m-auto my-8 animate-spin "></div>
 
             <div>
                 <h1 class="text-center text-2xl font-bold">football</h1>
@@ -113,7 +113,7 @@
                 </table>
             </div>
 
-            <div class="grid grid-cols-12 gap-2 h-96 mt-4">
+            <div class="grid grid-cols-12 gap-2 h-auto mt-4">
                 <!-- Sidebar: takes up 3 out of 12 columns -->
                 <aside class="col-span-3 bg-gray-800 text-white p-6">
                     Navigation
@@ -122,21 +122,41 @@
                 <!-- Main Content: takes up 9 out of 12 columns -->
                 <main class="col-span-9 bg-gray-100 p-6">
                     <div class="grid grid-cols-2 gap-4">
-                    <section class="bg-white p-4 shadow">Left Content Card</section>
+                    <section class="bg-white p-4 shadow">
+                        Left Content Card
+                        <div class="transition duration-500 ease-in-out transform hover:scale-110 hover:bg-red-500 p-4">
+                            Hover over me to grow and change color!
+                        </div>
+                        <!-- <div class="animate-[wiggle_1s_ease-in-out_infinite]-spin">...</div> -->
+                    </section>
                     <section class="bg-white p-4 shadow">Right Content Card</section>
                     </div>
                 </main>
-                </div>
+            </div>
             
         </div>
     </main>
 <!-- <button class="bg-blue-500 text-white p-2 rounded flex items-center">Spinning SVG Icon<svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24 bg-c-red-500"></svg>Processing...</button> -->
-    <footer class="p-2 py-0 bg-gray-800 text-white">
-        <div class=" flex flex-wrap gap-4 text-center">
-            <div class="bg-blue-500 p-4 w-70">Part 1</div>
-            <div class="bg-green-500 p-4 w-70">Part 2</div>
-            <div class="bg-red-500 p-4 w-70">Part 3</div>
+    <footer class="p-2 bg-gray-800 text-white content-full">
+        <!-- <div class="grid grid-cols-3 grid-rows-2 gap-4 text-center">
+            <div class="bg-blue-500 p-4 w-auto">Part 1</div>
+            <div class="bg-green-500 p-4 w-auto">Part 2</div>
+            <div class="bg-yellow-500 p-4 w-auto">Part 3</div>
+            <div class="bg-gray-500 p-4 w-auto">Part 4</div>
+            <div class="bg-purple-500 p-4 w-auto">Part 5</div>
+        </div> -->
+        <div class="grid grid-cols-2 gap-4 text-center ">
+            <div class="flex col-span-2 ">
+                <div class="bg-blue-500 p-4 w-204 m-2 rounded-lg">Part 1</div>
+                <div class="bg-green-500 p-4 w-100 m-2 rounded-lg">Part 2</div>
+            </div>
         </div>
+        <div class="grid grid-cols-3 grid-flow-col text-center">
+            <div class="bg-yellow-500 p-4 w-auto m-2 rounded-lg">Part 3</div>
+            <div class="bg-gray-500 p-4 w-auto m-2 rounded-lg">Part 4</div>
+            <div class="bg-purple-500 p-4 w-auto m-2 rounded-lg">Part 5</div>
+        </div>
+        
     </footer>
 </body>
 </html>
