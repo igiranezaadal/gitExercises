@@ -6,8 +6,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body class="bg-neutral-100">
-    <header class="grid grid-cols-3 p-4 mt-4">  <span class="ml-10 p-2"><img src="img/Logo.png" alt="adal"></span>
+<body class="bg-neutral-100 grid place-items-center">
+    <header class="grid grid-cols-3 p-4 mt-4 sticky">  <span class="ml-10 p-2"><img src="img/Logo.png" alt="adal"></span>
         <span class="">
             <ul class="flex text-center p-2">
                 <li class=" px-4">About</li>
@@ -27,27 +27,94 @@
     <!-- <main class="flex flex-wrap justify-center items-center mt-6"> -->
     <!-- <main class="w-250 mx-auto gap-20 "> -->
     <!-- <main class="flex mx-auto w-1/2 gap-20"> -->
-        <div class="grid grid-cols-2 mx-20">
+        <div class="grid grid-cols-2 m-20">
             <div class="w-120">
                 <h1 class="font-bold p-4 text-4xl">Want anything to be easy with LaslesVPN.</h1>
                 <p class="p-4 mb-4">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
-                <button class="bg-red-500 ml-4 p-2 px-8 rounded-lg">Get Started</button>
+                <button class="bg-red-500 ml-4 p-2 px-8 rounded-lg shadow-xl shadow-red-300">Get Started</button>
             </div>
             <div class="bg-red-100w-[1440px] rotate-0 opacity-100"><img src="img/Illustration 1.png" alt=""></div>
         </div>
-        <div class="grid grid-cols-3 w-250 ml-30 text-center" >
-            <div class="bg-blue-500 w-50 h-30">90+</div>
-            <div class="bg-red-500 w-50 h-30">30+</div>
-            <div class="bg-yellow-500 w-50 h-30">50+</div>
+        <div class="grid grid-cols-3 w-250 gap-x-2 mt-4 bg-white" >
+            
+            <div class="text-center h-25 flex flex-rows justify-center items-center my-6">
+                <div class="w-10 h-10"><img src="img/user.png" alt=""></div>
+                <div class="w-20">
+                    <div class=" text-center font-bold ">90+</div>
+                    <div class=" text-center ">users</div>
+                </div>
+                
+            </div>
+            <div class="text-center h-25 flex flex-rows justify-center items-center border-r-2 border-l-2 border-gray-300 my-6">
+                <div class="w-10 h-10"><img class="rounded-full w-10 h-10 " src="img/location.png" alt=""></div>
+                <div class="w-20">
+                    <div class=" text-center font-bold ">30+</div>
+                    <div class=" text-center ">Locations</div>
+                </div>
+                
+            </div>
+            <div class="text-center h-25 flex flex-rows justify-center items-center my-6">
+                <div class="w-10 h-10"><img class="rounded-full" src="img/servers.png" alt=""></div>
+                <div class="w-20">
+                    <div class=" text-center font-bold ">50+</div>
+                    <div class=" text-center ">Servers</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 w-250 mx-20 my-15 gap-x-20">
+            <div class=""><img src="img/Illustration 2.png" alt=""></div>
+            <div class="">
+                <h1 class="font-bold p-4 text-5xl">We Provide Many Features You Can Use</h1>
+                <p class="p-4">Discover the many features that LaslesVPN offers to make your online experience better and more secure.</p>
+                <div class="grid grid-cols-1 gap-4 mt-4">
+                    <div class="flex flex-row">
+                        <div class=""><img src="img/check.png" class="w-5 h-5"></div>
+                        <div class="ml-2">Powerfull online protection.</div>
+                    </div>
+                        <div class="flex flex-row">
+                            <div class=""><img src="img/check.png" class="w-5 h-5"></div>
+                            <div class="ml-2">Internet without borders.</div>
+                        </div>
+                        <div class="flex flex-row">
+                            <div class=""><img src="img/check.png" class="w-5 h-5"></div>
+                            <div class="ml-2">Supercharged VPN.No specific time limits.</div>
+                        </div>
+                        <div class="flex flex-row">
+                            <div class=""><img src="img/check.png" class="w-5 h-5"></div>
+                            <div class="ml-2">No specific time limits.</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 w-250 mx-20 my-15 gap-x-20 text-center">
+            <h1  class="font-bold text-2xl">Choose Your Plan</h1>
+            <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+        </div>
+
+        <div class="mb-100 gap-x-20 grid grid-cols-3 w-250 rounded-lg bg-white p-4">
+            <div class="w-70 h-100 bg-gray-200 grid place-items-center rounded-lg p-4">
+                <img src="img/Premium.png" alt="Free Plan">
+                <p>freeplan</p>
+            </div>
+            <div class="w-70 h-100 bg-gray-200 grid place-items-center rounded-lg p-4">
+                <img src="img/Premium.png" alt="Standard Plan">
+                <p>standard plan</p>
+            </div>
+            <div class="w-70 h-100 bg-gray-200 grid place-items-center rounded-lg p-4">
+                <img src="img/Premium.png" alt="Premium Plan">
+                <p> premium plan</p>
+            </div>
         </div>
 
     <!-- </main>  -->
     
     
-    <footer class="grid grid-cols-4">
+    <!-- <footer class="grid grid-cols-4">
         <div class="">
             <span class="ml-10 p-2"><img src="img/Logo.png" alt="adal"></span>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>
