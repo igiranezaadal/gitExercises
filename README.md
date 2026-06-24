@@ -1,1 +1,1 @@
-resolve conflict
+resolve conflict 2.0
