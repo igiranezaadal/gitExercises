@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+TIMEOUT=45
+=======
+TIMEOUT=45
+>>>>>>> feature/conflict
