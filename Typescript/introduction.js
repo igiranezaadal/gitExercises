@@ -29,18 +29,39 @@ const menu=[
     {name: "margherita", price: 8 },
     {name: "Pepperoni", price: 10 },
     {name: "Hawaiian", price: 10 },
-    {name: "Vegie", price: 8 },
+    {name: "Veggie", price: 8 },
 ]
 
 const cashInRegister = 100;
-const order = {};
+// let 
+const orderQueue = {};
 
 /** 
  * Challenge: Add a utility function "addNewPizza" that takes a pizza object
  * and adds it to the menu.
  */
-function addNewPizza(){
-    menu.push({ name: "Adal", price: 13 })
-    console.log(menu)
+function addNewPizza(pizzaObj){
+    menu.push(pizzaObj)
+    // console.log(menu)
 }
-addNewPizza()
+// addNewPizza()
+
+
+// function placeOrder(){
+//     // menu.name=orderQueue
+//     // menu.price=cashInRegister
+//     // newData={ name: orderQueue, price: cashInRegister}
+//     menu.push({ name: orderQueue, price: cashInRegister})
+//     return menu
+//     // menu.name.push(orderQueue)
+// }
+// console.log(placeOrder())
+
+function placeOrder(pizzaName) {
+    const selectedPizza = menu.find(pizzaObj => pizzaObj.name === pizzaName)
+    cashInRegister = cashInRegister + selectedPizza.price
+    const newOrder = { pizza: selectedPizza, status: "ordered" }
+    orderQueue.push(newOrder)
+    return newOrder
+}
+placeOrder('Veggie')
