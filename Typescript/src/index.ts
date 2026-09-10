@@ -18,18 +18,24 @@ console.log('hello Adal');
 
 
 
-function descendingOrder(n: number|string): number {
-  // your code here
+// function descendingOrder(n: number|string): number {
+//   // your code here
   
-//   let toText = String(n)
-//   toText = toText.reverse('')
-//   return Number(toText)
+// //   let toText = String(n)
+// //   toText = toText.reverse('')
+// //   return Number(toText)
 
-    // n = String(n)
-    // return n.split('').sort((a,b)=>b-a).join('')
+//     // n = String(n)
+//     // return n.split('').sort((a,b)=>b-a).join('')
 
-  return Number(String(n).split('')
-                  .sort((a,b)=>Number(b) - Number(a))
-                  .join(''));
+//   return Number(String(n).split('')
+//                   .sort((a,b)=>Number(b) - Number(a))
+//                   .join(''));
+// }
+// console.log(descendingOrder(12345));
+
+
+function repeatStr (n:number, s:String):String {
+  return s.repeat(n);
 }
-console.log(descendingOrder(12345));
+console.log(repeatStr(6, 'r'));
