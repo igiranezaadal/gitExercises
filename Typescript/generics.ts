@@ -35,3 +35,13 @@ class Box<T> {
 
 const numberBox = new Box<number>(100);
 const stringBox = new Box<string>("Hello");
+
+
+// generics and constraints
+interface hasLength{length:number;}
+function logLength<T extends hasLength>(arg: T){
+    console.log(arg.length);
+    return arg;
+}
+logLength('hello Adal')
+logLength([1,2])
