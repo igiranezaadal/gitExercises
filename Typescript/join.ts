@@ -20,4 +20,4 @@ class Person {
 
 const person = new Person("Jane");
 console.log(person.getName()); // no error
-// console.log(person.name) // cant accsess private accesss modifireer
+// console.log(person.name) // cant accsess private accesss modifirer
