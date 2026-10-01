@@ -46,32 +46,46 @@
 // logLength('hello Adal')
 // logLength([1,2])
 
-const addUID= <T extends {name:string}>(obj: T ) =>{
-    let uid=Math.floor(Math.random()*100);
-    return {...obj, uid};
-}
-let docOne = addUID({name: 'yoshi', age: 40});
-
-console.log(docOne.name)
-console.log(docOne.age)
-console.log(docOne)
-
-interface Resourse<T>{
-    uid: number;
-    resourceName: string;
-    data: object
-}
-// let adal69: Resourse{
-//     uids=67,
-//     resourse='HELLO aDAL',
-//     data='???'
+// const addUID= <T extends {name:string}>(obj: T ) =>{
+//     let uid=Math.floor(Math.random()*100);
+//     return {...obj, uid};
 // }
-// console.log(adal69);
-// console.log(adal69);
-// urce={}
-const docThree: Resourse<string>={
-    uid: 1,
-    resourceName: 'person',
-    data: {name:'sh aun'}
+// let docOne = addUID({name: 'yoshi', age: 40});
+
+// console.log(docOne.name)
+// console.log(docOne.age)
+// console.log(docOne)
+
+// interface Resourse<T>{
+//     uid: number;
+//     resourceName: string;
+//     data: object
+// }
+// // let adal69: Resourse{
+// //     uids=67,
+// //     resourse='HELLO aDAL',
+// //     data='???'
+// // }
+// // console.log(adal69);
+// // console.log(adal69);
+// // urce={}
+// const docThree: Resourse<string>={
+//     uid: 1,
+//     resourceName: 'person',
+//     data: {name:'sh aun'}
+// }
+// console.log(docThree);
+
+
+function data_<MyType>(infor:MyType): MyType{
+    return infor
 }
-console.log(docThree);
+const ages: number[]=[67,68]
+const names: string[]=['tony','adal']
+
+console.log(data_(ages));
+console.log(`\n`)
+console.log(data_(names));
+
+const adal=document.querySelector<HTMLInputElement>('.btnAdal')
+adal?.value

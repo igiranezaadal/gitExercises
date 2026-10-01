@@ -19,9 +19,19 @@
 // console.log(birth)
 // console.log(colors)
 
-
-function assertionFunc(): any {
-    return 'Hello, Typescript';
+var n: number=5
+while(n>5){
+    console.log("enter while");
 }
-let strLength: number = (assertionFunc() as string).length;
-console.log(strLength)
+
+do{
+    console.log(`entered dowhile`);  
+}
+while(n>5)
+
+
+// function assertionFunc(): any {
+//     return 'Hello, Typescript';
+// }
+// let strLength: number = (assertionFunc() as string).length;
+// console.log(strLength)
