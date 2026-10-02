@@ -55,20 +55,121 @@
 // console.log(person.name) // cant accsess private accesss modifirer
 
 
-class Point{
-    x: number;
-    y: number;
-    constructor(x: number, y: number){
-        this.x = x;
-        this.y = y; 
-    }
+// class Point{
+//     x: number;
+//     y: number;
+//     constructor(x: number, y: number){
+//         this.x = x;
+//         this.y = y; 
+//     }
 
-    draw(){
-        console.log('X: '+ this.x + 'Y: '+ this.y);
+//     draw(){
+//         console.log('X: '+ this.x + 'Y: '+ this.y);
         
-    }
+//     }
+// }
+
+// let point= new Point(1, 2);
+// console.log(point.x=3);
+// console.log(point.draw());
+
+
+// making a queue
+
+// export class Queue<T>{
+//     private items: Record<number, T> ={};
+//     private headIndex: number = 0;
+//     private tailIndex: number = 0;
+
+//     enqueue(item: T): void{
+//         this.items[this.tailIndex]=item;
+//         this.tailIndex++;
+//     }
+
+//     dequeue():T | undefined{
+//         delete this.items[this.headIndex];
+//         this.headIndex++;
+//         return undefined;
+//     }
+    
+//     peek(): T | undefined {
+//     if (this.isEmpty()) {
+//       return undefined;
+//     }
+//     return this.items[this.headIndex];
+//   }
+//   isEmpty(): boolean {
+//     return this.size === 0;
+//   }
+
+//   get size(): number {
+//     return this.tailIndex - this.headIndex;
+//   }
+
+//   clear(): void {
+//     this.items = {};
+//     this.headIndex = 0;
+//     this.tailIndex = 0;
+//   }
+// }
+
+// const printQueue =new Queue<string>();
+
+// printQueue.enqueue('document1.pdf')
+// printQueue.enqueue('report.docx')
+// printQueue.enqueue('Photo.png')
+// printQueue.enqueue('Photo.png')
+// printQueue.dequeue();
+
+// console.log(printQueue.peek()); // Output: "Document1.pdf"
+// console.log(printQueue.size);   // Output: 3
+
+// console.log(printQueue.dequeue()); // Output: "Document1.pdf"
+// console.log(printQueue.size);      // Output: 2
+
+// using arrays
+export class ArrayQueue<T> {
+  private items: T[] = [];
+
+  enqueue(item: T): void {
+    this.items.push(item);
+  }
+
+
+  dequeue(): T | undefined {
+    return this.items.shift();
+  }
+
+  
+  peek(): T | undefined {
+    return this.items[0];
+  }
+
+  isEmpty(): boolean {
+    return this.items.length === 0;
+  }
+
+  get size(): number {
+    return this.items.length;
+  }
+
+  clear(): void {
+    this.items = [];
+  }
 }
 
-let point= new Point(1, 2);
-console.log(point.x=3);
-console.log(point.draw());
+
+const printQueue = new ArrayQueue<string>();
+
+printQueue.enqueue("Document1.pdf");
+printQueue.enqueue("Report.docx");
+printQueue.enqueue("Photo.png");
+
+console.log(printQueue.peek());   // Output: "Document1.pdf"
+console.log(printQueue.size);     // Output: 3
+
+console.log(printQueue.dequeue()); // Output: "Document1.pdf"
+console.log(printQueue.size);
+
+
+// union typeon union cant 
