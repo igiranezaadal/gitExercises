@@ -19,15 +19,15 @@
 // console.log(birth)
 // console.log(colors)
 
-var n: number=5
-while(n>5){
-    console.log("enter while");
-}
+// var n: number=5
+// while(n>5){
+//     console.log("enter while");
+// }
 
-do{
-    console.log(`entered dowhile`);  
-}
-while(n>5)
+// do{
+//     console.log(`entered dowhile`);  
+// }
+// while(n>5)
 
 
 // function assertionFunc(): any {
@@ -35,3 +35,14 @@ while(n>5)
 // }
 // let strLength: number = (assertionFunc() as string).length;
 // console.log(strLength)
+
+// optional chaining
+type Customer={
+    birthday: Date
+}
+function getCustomer (id: number): Customer | null | undefined {
+ return id ===0? null: { birthday: new Date() };
+}
+let customer = getCustomer(1);
+
+console.log(`date is: ${customer?.birthday}`);

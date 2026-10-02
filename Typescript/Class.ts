@@ -29,10 +29,36 @@
 // })
 
 // access modifier in typescript
+
+
+// Public class Person {
+//   name: string;
+// }
+
+// const person = new Person();
+// person.name = "Jane";
+
+// class Person {
+//   private name: string;
+
+//   public constructor(name: string) {
+//     this.name = name;
+//   }
+
+//   public getName(): string {
+//     return this.name;
+//   }
+// }
+
+// const person = new Person("Jane");
+// console.log(`Your name is: ${person.getName()}`); // no error
+// console.log(person.name) // cant accsess private accesss modifirer
+
+
 class Point{
     x: number;
-    y:number;
-    constructor(x:number, y: number){
+    y: number;
+    constructor(x: number, y: number){
         this.x = x;
         this.y = y; 
     }
